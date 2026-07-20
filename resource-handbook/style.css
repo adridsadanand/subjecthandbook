@@ -1,0 +1,319 @@
+/* ============ Tokens ============ */
+:root{
+  --ink: #1B2129;
+  --ink-soft: #2A3240;
+  --paper: #EEF0EA;
+  --paper-card: #FCFCFA;
+  --text: #1B2129;
+  --text-soft: #5B6270;
+  --line: #DADCD3;
+
+  --physics: #35659E;
+  --chemistry: #C06430;
+  --biology: #3E7A4C;
+  --math: #6C4C9B;
+  --social: #A9822F;
+  --english: #A03A56;
+  --featured: #8A8264;
+
+  --radius: 14px;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+*{ box-sizing: border-box; }
+html{ scroll-behavior: smooth; }
+
+body{
+  margin:0;
+  background: var(--paper);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a{ color: inherit; }
+
+/* ============ Hero ============ */
+.hero{
+  background: var(--ink);
+  color: #EEEFEA;
+  padding: 72px 24px 56px;
+}
+.hero-inner{
+  max-width: 780px;
+  margin: 0 auto;
+}
+.eyebrow{
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #B9BCA9;
+  margin: 0 0 18px;
+}
+.hero h1{
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
+  line-height: 1.05;
+  margin: 0 0 20px;
+  letter-spacing: -0.01em;
+}
+.hero-sub{
+  font-size: 1.05rem;
+  color: #C7C9BE;
+  max-width: 58ch;
+  margin: 0 0 28px;
+}
+.hero-meta{
+  font-size: 14px;
+  color: #9EA290;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.hero-meta strong{
+  color: #EEEFEA;
+  font-family: var(--font-mono);
+  font-weight: 500;
+}
+.hero-meta .dot{ opacity: .5; }
+
+/* ============ Search ============ */
+.search-bar-wrap{
+  background: var(--ink);
+  padding: 0 24px 40px;
+}
+.search-bar{
+  max-width: 780px;
+  margin: 0 auto;
+  background: var(--ink-soft);
+  border: 1px solid #3B4453;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+}
+.search-icon{
+  width: 18px; height: 18px;
+  color: #9EA290;
+  flex-shrink: 0;
+}
+.search-bar input{
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: #EEEFEA;
+  font-family: var(--font-body);
+  font-size: 15px;
+}
+.search-bar input::placeholder{ color: #767C6E; }
+
+/* ============ Tabs (binder-tab nav) ============ */
+.tabs{
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  gap: 4px;
+  padding: 14px 20px 0;
+  background: var(--paper);
+  overflow-x: auto;
+  scrollbar-width: none;
+  border-bottom: 1px solid var(--line);
+}
+.tabs::-webkit-scrollbar{ display:none; }
+
+.tab{
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: .01em;
+  text-decoration: none;
+  color: var(--text-soft);
+  background: var(--paper-card);
+  border: 1px solid var(--line);
+  border-bottom: none;
+  padding: 10px 18px 12px;
+  border-radius: 10px 10px 0 0;
+  clip-path: polygon(10px 0, 100% 0, 100% 100%, 0 100%, 0 10px);
+  transition: transform .15s ease, color .15s ease, background .15s ease;
+  position: relative;
+  top: 1px;
+}
+.tab:hover{ transform: translateY(-2px); }
+
+.tab-featured{ --c: var(--featured); }
+.tab-physics{ --c: var(--physics); }
+.tab-chemistry{ --c: var(--chemistry); }
+.tab-biology{ --c: var(--biology); }
+.tab-math{ --c: var(--math); }
+.tab-social{ --c: var(--social); }
+.tab-english{ --c: var(--english); }
+
+.tab{ border-top: 3px solid var(--c); }
+.tab.active{
+  color: #fff;
+  background: var(--c);
+  border-color: var(--c);
+}
+
+/* ============ Shelves / sections ============ */
+main{ max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+
+.shelf{ padding: 56px 0 8px; scroll-margin-top: 74px; }
+.shelf-head{ margin-bottom: 28px; }
+.shelf-head h2{
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin: 0 0 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.shelf-head p{
+  margin: 0;
+  color: var(--text-soft);
+  max-width: 60ch;
+}
+.tab-dot{
+  width: 12px; height: 12px;
+  border-radius: 3px;
+  background: var(--c);
+  display: inline-block;
+}
+.shelf-physics .tab-dot{ --c: var(--physics); }
+.shelf-chemistry .tab-dot{ --c: var(--chemistry); }
+.shelf-biology .tab-dot{ --c: var(--biology); }
+.shelf-math .tab-dot{ --c: var(--math); }
+.shelf-social .tab-dot{ --c: var(--social); }
+.shelf-english .tab-dot{ --c: var(--english); }
+
+.shelf-featured .shelf-head h2::before{
+  content: "";
+  width: 12px; height: 12px;
+  border-radius: 3px;
+  background: var(--featured);
+  display: inline-block;
+}
+
+/* ============ Cards ============ */
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  padding-bottom: 8px;
+}
+
+.card{
+  background: var(--paper-card);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--featured);
+  border-radius: var(--radius);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: box-shadow .18s ease, transform .18s ease;
+}
+.shelf-physics .card{ border-left-color: var(--physics); }
+.shelf-chemistry .card{ border-left-color: var(--chemistry); }
+.shelf-biology .card{ border-left-color: var(--biology); }
+.shelf-math .card{ border-left-color: var(--math); }
+.shelf-social .card{ border-left-color: var(--social); }
+.shelf-english .card{ border-left-color: var(--english); }
+
+.card:hover{
+  box-shadow: 0 8px 24px rgba(27,33,41,.08);
+  transform: translateY(-2px);
+}
+
+.card-top{ display:flex; }
+.badge{
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: .03em;
+  color: var(--text-soft);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  padding: 4px 9px;
+  border-radius: 999px;
+}
+
+.card h3{
+  font-family: var(--font-display);
+  font-size: 1.22rem;
+  font-weight: 600;
+  margin: 0;
+}
+.card p{
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 14.5px;
+  flex: 1;
+}
+
+.card-link{
+  margin-top: 4px;
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text);
+  border-bottom: 1.5px solid var(--text);
+  padding-bottom: 2px;
+}
+.card-link svg{ width: 14px; height: 14px; }
+.card-link:hover{ color: var(--physics); border-color: var(--physics); }
+.shelf-chemistry .card-link:hover{ color: var(--chemistry); border-color: var(--chemistry); }
+.shelf-biology .card-link:hover{ color: var(--biology); border-color: var(--biology); }
+.shelf-math .card-link:hover{ color: var(--math); border-color: var(--math); }
+.shelf-social .card-link:hover{ color: var(--social); border-color: var(--social); }
+.shelf-english .card-link:hover{ color: var(--english); border-color: var(--english); }
+
+/* ============ No results ============ */
+.no-results{
+  text-align: center;
+  color: var(--text-soft);
+  padding: 60px 0;
+  font-size: 15px;
+}
+
+/* ============ Footer ============ */
+.site-footer{
+  margin-top: 60px;
+  padding: 36px 20px 48px;
+  text-align: center;
+  border-top: 1px solid var(--line);
+  color: var(--text-soft);
+  font-size: 14px;
+}
+.site-footer p{ margin: 4px 0; }
+.footer-fine{ font-family: var(--font-mono); font-size: 12px; opacity: .8; }
+
+/* ============ Motion & focus ============ */
+a:focus-visible, input:focus-visible{
+  outline: 2px solid var(--physics);
+  outline-offset: 2px;
+}
+@media (prefers-reduced-motion: reduce){
+  *{ transition: none !important; scroll-behavior: auto !important; }
+}
+
+/* ============ Responsive ============ */
+@media (max-width: 640px){
+  .hero{ padding: 52px 20px 40px; }
+  .shelf{ padding: 40px 0 4px; }
+  .grid{ grid-template-columns: 1fr; }
+}
