@@ -3,431 +3,47 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Subject Resource Handbook — Free Learning Links</title>
-<meta name="description" content="A curated, subject-wise shelf of free and open resources for high school teachers and students.">
+<title>Resource Handbook — Free Learning Links for Every Class</title>
+<meta name="description" content="Pick your shelf — free, open learning resources for Pre-Primary/KG or Higher Classes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="chooser-body">
 
-  <!-- ===== Hero ===== -->
-  <header class="hero">
-    <div class="hero-inner">
-      <p class="eyebrow">Powered By Senses Electronics</p>
-      <h1>Subject <br/>Resource Handbook</h1>
-      <p class="hero-sub">One shelf, every subject. A curated set of free, open-source learning sites for
-        Physics, Chemistry, Biology, Math, Social Science and English — sorted like tabs in a binder so
-        anyone can find what they need in a click.</p>
-      <div class="hero-meta">
-        <span><strong id="stat-count">0</strong> resources</span>
-        <span class="dot">·</span>
-        <span>6 subject shelves</span>
-        <span class="dot">·</span>
-        <span>always free to use</span>
-      </div>
+  <main class="chooser-page">
+    <div class="chooser-intro">
+      <p class="eyebrow">Free &amp; open · no logins, no paywalls</p>
+      <h1 class="chooser-title">Resource Handbook</h1>
+      <p class="chooser-sub">One place, every stage. Pick a shelf to see the free, open
+        learning sites curated for that age group.</p>
     </div>
-  </header>
 
-  <!-- ===== Search ===== -->
-  <div class="search-bar-wrap">
-    <div class="search-bar">
-      <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <circle cx="11" cy="11" r="7"></circle>
-        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-      </svg>
-      <input id="searchInput" type="text" placeholder="Search a site, subject or topic — e.g. “genetics”, “Desmos”, “poetry”…" autocomplete="off">
+    <div class="chooser-grid">
+
+      <a class="chooser-card chooser-pre" href="pre-primary.html">
+        <span class="chooser-tag">Ages 3–6</span>
+        <h2>Pre-Primary<br>&amp; KG</h2>
+        <p>Phonics, first games, read-along stories and early math &amp; science.</p>
+        <span class="chooser-enter">Enter shelf
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+        </span>
+      </a>
+
+      <a class="chooser-card chooser-higher" href="higher-classes.html">
+        <span class="chooser-tag">Grades 6–12</span>
+        <h2>Higher<br>Classes</h2>
+        <p>Physics, Chemistry, Biology, Math, Social Science and English — subject by subject.</p>
+        <span class="chooser-enter">Enter shelf
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+        </span>
+      </a>
+
     </div>
-  </div>
 
-  <!-- ===== Tab navigation (the "binder tabs") ===== -->
-  <nav class="tabs" id="tabNav" aria-label="Subject shelves">
-    <a href="#featured" class="tab tab-featured" data-target="featured">Featured</a>
-    <a href="#physics" class="tab tab-physics" data-target="physics">Physics</a>
-    <a href="#chemistry" class="tab tab-chemistry" data-target="chemistry">Chemistry</a>
-    <a href="#biology" class="tab tab-biology" data-target="biology">Biology</a>
-    <a href="#math" class="tab tab-math" data-target="math">Math</a>
-    <a href="#social" class="tab tab-social" data-target="social">Social Science</a>
-    <a href="#english" class="tab tab-english" data-target="english">English</a>
-  </nav>
-
-  <main>
-
-    <!-- ===== Featured platforms ===== -->
-    <section id="featured" class="shelf shelf-featured" data-subject-section>
-      <div class="shelf-head">
-        <h2>Featured Platforms</h2>
-        <p>Full learning ecosystems worth bookmarking on their own — courses, virtual labs and open textbooks.</p>
-      </div>
-      <div class="grid">
-
-        
-        <article class="card" data-search="ck-12 ck12 stem textbooks simulations practice grades 6-12">
-          <div class="card-top">
-            <span class="badge">Grades 6–12</span>
-          </div>
-          <h3>CK-12</h3>
-          <p>Interactive STEM textbooks, simulations and practice sets from a non-profit dedicated to
-            low-cost K-12 education.</p>
-          <a class="card-link" href="https://www.ck12.org" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-
-        <article class="card" data-search="brainly homework help community doubt clearing cbse state syllabus">
-          <div class="card-top">
-            <span class="badge">Grades 6–12</span>
-          </div>
-          <h3>Brainly</h3>
-          <p>A peer-to-peer homework help community where students ask and answer questions — handy for
-            doubt-clearing across CBSE and state syllabi.</p>
-          <a class="card-link" href="https://brainly.com" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-
-        <article class="card" data-search="libretexts open textbooks teachers students homework">
-          <div class="card-top">
-            <span class="badge">Teachers &amp; Students</span>
-          </div>
-          <h3>LibreTexts</h3>
-          <p>A non-profit open-education platform for creating, customizing and sharing accessible,
-            interactive textbooks and homework tools.</p>
-          <a class="card-link" href="https://libretexts.org/" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-
-        <article class="card" data-search="chemcollective virtual lab chemistry simulation reagents">
-          <div class="card-top">
-            <span class="badge">Teachers &amp; Students</span>
-          </div>
-          <h3>ChemCollective</h3>
-          <p>A virtual chemistry lab that links computation to authentic lab practice — students mix
-            hundreds of standard reagents just like a real bench.</p>
-          <a class="card-link" href="https://chemcollective.org/vlabs" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-
-        <article class="card" data-search="open anatomy project anatomical atlas biology medical">
-          <div class="card-top">
-            <span class="badge">Medicos &amp; Biology</span>
-          </div>
-          <h3>Open Anatomy Project</h3>
-          <p>Free digital anatomy atlases from Brigham and Women's Hospital, Boston — built to make
-            accurate anatomical knowledge available to everyone.</p>
-          <a class="card-link" href="https://www.openanatomy.org/" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-
-        <article class="card" data-search="anatomography 3d human anatomy japan obj file biology medical">
-          <div class="card-top">
-            <span class="badge">Medicos &amp; Biology</span>
-          </div>
-          <h3>Anatomography</h3>
-          <p>Free 3D human anatomy models from Japan — .obj files are downloadable for closer study
-            or classroom demos.</p>
-          <a class="card-link" href="https://lifesciencedb.jp/bp3d/?lng=en" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-        <article class="card" data-search="edx harvard mit mooc online courses college higher secondary">
-          <div class="card-top">
-            <span class="badge">College · Higher Secondary</span>
-          </div>
-          <h3>edX</h3>
-          <p>Online university-level courses from Harvard, MIT and others, built on the free Open edX platform —
-            video lessons, exercises and discussion forums in one place.</p>
-          <a class="card-link" href="https://www.edx.org" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-
-
-      </div>
-    </section>
-
-    <!-- ===== Physics ===== -->
-    <section id="physics" class="shelf shelf-physics" data-subject-section>
-      <div class="shelf-head">
-        <h2><span class="tab-dot"></span>Physics</h2>
-        <p>Simulations, circuits and concept explanations for mechanics through electromagnetism.</p>
-      </div>
-      <div class="grid">
-        <article class="card" data-search="the physics classroom tutorials animations quizzes cbse isc state boards">
-          <div class="card-top"><span class="badge">CBSE · ISC · State Boards</span></div>
-          <h3>The Physics Classroom</h3>
-          <p>Tutorials, animations and quizzes covering the full high-school physics syllabus.</p>
-          <a class="card-link" href="https://www.physicsclassroom.com/" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-        <article class="card" data-search="myphysicslab simulations experiments mechanics">
-          <div class="card-top"><span class="badge">Mechanics</span></div>
-          <h3>MyPhysicsLab</h3>
-          <p>Live physics simulations and experiments students can tweak and re-run.</p>
-          <a class="card-link" href="https://www.myphysicslab.com/" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-        <article class="card" data-search="falstad physics simulations interactive circuit electricity magnetism">
-          <div class="card-top"><span class="badge">Electricity &amp; Magnetism</span></div>
-          <h3>Falstad Physics Simulations</h3>
-          <p>Interactive circuit and physics simulators students can build and probe live.</p>
-          <a class="card-link" href="https://www.falstad.com/" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-        <article class="card" data-search="hyperphysics concept explanations revision">
-          <div class="card-top"><span class="badge">Revision</span></div>
-          <h3>HyperPhysics</h3>
-          <p>Dense, linked concept maps — great for quick revision before a test.</p>
-          <a class="card-link" href="http://hyperphysics.phy-astr.gsu.edu/" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-        <article class="card" data-search="nptel iit online courses jee higher secondary">
-          <div class="card-top"><span class="badge">JEE &amp; Higher Secondary</span></div>
-          <h3>NPTEL</h3>
-          <p>IIT-taught online courses, useful for stretching stronger students toward JEE-level depth.</p>
-          <a class="card-link" href="https://nptel.ac.in/" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-      </div>
-    </section>
-
-    <!-- ===== Chemistry ===== -->
-    <section id="chemistry" class="shelf shelf-chemistry" data-subject-section>
-      <div class="shelf-head">
-        <h2><span class="tab-dot"></span>Chemistry</h2>
-        <p>Molecular visualization, reference material and self-study explanations.</p>
-      </div>
-      <div class="grid">
-        <article class="card" data-search="royal society of chemistry educational resources teachers">
-          <div class="card-top"><span class="badge">Teachers</span></div>
-          <h3>Royal Society of Chemistry</h3>
-          <p>A deep library of ready-to-use educational chemistry resources.</p>
-          <a class="card-link" href="https://edu.rsc.org/" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-        <article class="card" data-search="molview 3d molecular visualization organic chemistry">
-          <div class="card-top"><span class="badge">Organic Chemistry</span></div>
-          <h3>MolView</h3>
-          <p>Build and rotate 3D molecules right in the browser.</p>
-          <a class="card-link" href="https://molview.org/" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-        <article class="card" data-search="chemguide organic physical chemistry self-study">
-          <div class="card-top"><span class="badge">Self-study</span></div>
-          <h3>Chemguide</h3>
-          <p>Clear, self-paced explanations across organic and physical chemistry.</p>
-          <a class="card-link" href="https://www.chemguide.co.uk/" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-      </div>
-    </section>
-
-    <!-- ===== Biology ===== -->
-    <section id="biology" class="shelf shelf-biology" data-subject-section>
-      <div class="shelf-head">
-        <h2><span class="tab-dot"></span>Biology</h2>
-        <p>Anatomy explorers, virtual labs and genetics primers.</p>
-      </div>
-      <div class="grid">
-        <article class="card" data-search="innerbody human anatomy explorer 3d illustrations biology">
-          <div class="card-top"><span class="badge">Biology</span></div>
-          <h3>InnerBody</h3>
-          <p>A detailed, clickable 3D explorer of human body systems.</p>
-          <a class="card-link" href="https://www.innerbody.com/htm/body.html" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-        <article class="card" data-search="labxchange harvard virtual labs biology">
-          <div class="card-top"><span class="badge">Biology</span></div>
-          <h3>LabXchange</h3>
-          <p>Harvard-built virtual labs for hands-on biology without the equipment budget.</p>
-          <a class="card-link" href="https://www.labxchange.org/" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-        <article class="card" data-search="learn.genetics dna genetics utah">
-          <div class="card-top"><span class="badge">Genetics</span></div>
-          <h3>Learn.Genetics</h3>
-          <p>Friendly, visual explainers on DNA and genetics from the University of Utah.</p>
-          <a class="card-link" href="https://learn.genetics.utah.edu/" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-        <article class="card" data-search="olabs virtual practical labs cbse practical">
-          <div class="card-top"><span class="badge">CBSE Practical</span></div>
-          <h3>OLabs</h3>
-          <p>Virtual practical labs mapped closely to the CBSE curriculum.</p>
-          <a class="card-link" href="https://www.olabs.edu.in/" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-      </div>
-    </section>
-
-    <!-- ===== Math ===== -->
-    <section id="math" class="shelf shelf-math" data-subject-section>
-      <div class="shelf-head">
-        <h2><span class="tab-dot"></span>Math</h2>
-        <p>Graphing tools, visualizations and problem-solving practice.</p>
-      </div>
-      <div class="grid">
-        <article class="card" data-search="desmos graphing calculator algebra calculus">
-          <div class="card-top"><span class="badge">Algebra &amp; Calculus</span></div>
-          <h3>Desmos</h3>
-          <p>The graphing calculator every student ends up loving — free and instant.</p>
-          <a class="card-link" href="https://www.desmos.com/" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-        <article class="card" data-search="wolfram demonstrations interactive math models visualization">
-          <div class="card-top"><span class="badge">Visualization</span></div>
-          <h3>Wolfram Demonstrations</h3>
-          <p>Thousands of interactive math models to explore concepts hands-on.</p>
-          <a class="card-link" href="https://demonstrations.wolfram.com/" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-        <article class="card" data-search="math is fun easy explanations basics">
-          <div class="card-top"><span class="badge">Basics</span></div>
-          <h3>Math is Fun</h3>
-          <p>Plain-language explanations for building up the fundamentals.</p>
-          <a class="card-link" href="https://www.mathsisfun.com/" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-        <article class="card" data-search="brilliant problem solving concept building">
-          <div class="card-top"><span class="badge">Concept Building</span></div>
-          <h3>Brilliant</h3>
-          <p>Bite-sized, interactive problem-solving to build real intuition.</p>
-          <a class="card-link" href="https://brilliant.org/" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-      </div>
-    </section>
-
-    <!-- ===== Social Science ===== -->
-    <section id="social" class="shelf shelf-social" data-subject-section>
-      <div class="shelf-head">
-        <h2><span class="tab-dot"></span>Social Science</h2>
-        <p>Geography, economics, history and civics — mapped, charted and archived.</p>
-      </div>
-      <div class="grid">
-        <article class="card" data-search="google earth education interactive geography">
-          <div class="card-top"><span class="badge">Geography</span></div>
-          <h3>Google Earth Education</h3>
-          <p>Interactive maps and guided tours for teaching geography visually.</p>
-          <a class="card-link" href="https://www.google.com/earth/education" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-        <article class="card" data-search="gapminder global statistics economics">
-          <div class="card-top"><span class="badge">Economics</span></div>
-          <h3>Gapminder</h3>
-          <p>Global statistics brought to life through animated, explorable charts.</p>
-          <a class="card-link" href="https://www.gapminder.org/" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-        <article class="card" data-search="world history encyclopedia articles">
-          <div class="card-top"><span class="badge">World History</span></div>
-          <h3>World History Encyclopedia</h3>
-          <p>Well-sourced articles spanning civilizations and eras.</p>
-          <a class="card-link" href="https://www.worldhistory.org/" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-        <article class="card" data-search="unesco education educational resources social studies">
-          <div class="card-top"><span class="badge">Social Studies</span></div>
-          <h3>UNESCO Education</h3>
-          <p>Global education resources and reports from the UN's education body.</p>
-          <a class="card-link" href="https://www.unesco.org/en/education" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-        <article class="card" data-search="library of congress classroom materials historical documents history">
-          <div class="card-top"><span class="badge">History</span></div>
-          <h3>Library of Congress Classroom Materials</h3>
-          <p>Primary historical documents ready to bring straight into a lesson.</p>
-          <a class="card-link" href="https://www.loc.gov/classroom-materials" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-      </div>
-    </section>
-
-    <!-- ===== English ===== -->
-    <section id="english" class="shelf shelf-english" data-subject-section>
-      <div class="shelf-head">
-        <h2><span class="tab-dot"></span>English Language &amp; Literature</h2>
-        <p>Listening, grammar, classic texts and vocabulary — all free to read.</p>
-      </div>
-      <div class="grid">
-        <article class="card" data-search="bbc learning english listening speaking daily english">
-          <div class="card-top"><span class="badge">Daily English</span></div>
-          <h3>BBC Learning English</h3>
-          <p>Listening and speaking practice released daily, straight from the BBC.</p>
-          <a class="card-link" href="https://www.bbc.co.uk/learningenglish" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-        <article class="card" data-search="cambridge english grammar exams students">
-          <div class="card-top"><span class="badge">Students</span></div>
-          <h3>Cambridge English</h3>
-          <p>Grammar reference and exam-prep material from Cambridge.</p>
-          <a class="card-link" href="https://www.cambridgeenglish.org/learning-english" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-        <article class="card" data-search="project gutenberg free classic books literature">
-          <div class="card-top"><span class="badge">Literature</span></div>
-          <h3>Project Gutenberg</h3>
-          <p>Thousands of classic books, free to read or download in full.</p>
-          <a class="card-link" href="https://www.gutenberg.org/" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-        <article class="card" data-search="poetry foundation poems poets literature">
-          <div class="card-top"><span class="badge">Literature</span></div>
-          <h3>Poetry Foundation</h3>
-          <p>A vast, searchable archive of poems and poet biographies.</p>
-          <a class="card-link" href="https://www.poetryfoundation.org/" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-        <article class="card" data-search="merriam-webster learners dictionary vocabulary">
-          <div class="card-top"><span class="badge">Vocabulary</span></div>
-          <h3>Merriam-Webster Learner's Dictionary</h3>
-          <p>A dictionary written specifically for learners, with simple definitions.</p>
-          <a class="card-link" href="https://learnersdictionary.com/" target="_blank" rel="noopener">Open resource
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
-          </a>
-        </article>
-      </div>
-    </section>
-
-    <p id="noResults" class="no-results" hidden>No resources match “<span id="noResultsQuery"></span>”. Try another search.</p>
-
+    <p class="chooser-footnote">Compiled for teachers to share freely — every link is free and open to use.</p>
   </main>
 
-  <footer class="site-footer">
-    <p>Compiled for teachers to share freely — every link above is free and open to use.</p>
-    <p class="footer-fine">No accounts, no ads, no tracking of your students.</p>
-     <p class="footer-fine">-dev.adri-</p>
-  </footer>
-
-<script src="script.js"></script>
 </body>
 </html>
