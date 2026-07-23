@@ -9,6 +9,35 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+
+<!-- QR block styling (self-contained, no separate CSS file needed) -->
+<style>
+  .qr-card{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: var(--paper-card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 22px 28px;
+    box-shadow: 0 1px 3px rgba(27,33,41,.04);
+  }
+  .qr-card #qrcode{
+    padding: 8px;
+    background: #fff;
+    border-radius: 8px;
+    line-height: 0;
+  }
+  .qr-card-label{
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    letter-spacing: .04em;
+    color: var(--text-soft);
+    text-align: center;
+  }
+</style>
 </head>
 <body class="chooser-body">
 
@@ -42,9 +71,28 @@
 
     </div>
 
+    <!-- ===== QR code — auto-encodes whatever URL this page is hosted at ===== -->
+    <div class="qr-card">
+      <div id="qrcode"></div>
+      <p class="qr-card-label">Scan to open on your phone</p>
+    </div>
+
     <p class="chooser-footnote">Compiled for teachers to share freely — every link is free and open to use.</p>
-    <p class="chooser-footnote">for support, contact us at adridsadanand@gmail.com</p>
+    <p class="chooser-footnote">Contact us at adridsadanand@gmail.com for feedback or suggestions.</p>
   </main>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+  // Encodes the page's own live URL — no hardcoded link, no image file.
+  // Works automatically wherever this page ends up being hosted.
+  new QRCode(document.getElementById("qrcode"), {
+    text: window.location.href,
+    width: 120,
+    height: 120,
+    colorDark: "#1B2129",
+    colorLight: "#ffffff",
+    correctLevel: QRCode.CorrectLevel.M
+  });
+</script>
 </body>
 </html>
